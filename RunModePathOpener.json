@@ -1,0 +1,11 @@
+{
+    "typeNames": [
+        "PluginSamples.RunModePathOpener"
+    ],
+    "assemblyUiFileNames": [
+        "RunModePathOpener.dll"
+    ],
+    "IsSupportedWinX64": true,
+    "IsSupportedLinuxX64": true,
+    "IsSupportedLinuxArm64": true
+}

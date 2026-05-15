@@ -1,0 +1,9 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="PluginSamples.RunModePathOpener">
+  <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="8">
+    <TextBlock Text="路径：" VerticalAlignment="Center"/>
+    <TextBox x:Name="TxtPath" Width="360" Watermark="输入自定义文件夹路径，例如 C:\Images"/>
+    <Button Content="打开路径" Click="OnOpenPath"/>
+  </StackPanel>
+</UserControl>

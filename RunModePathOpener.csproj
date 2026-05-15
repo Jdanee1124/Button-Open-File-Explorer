@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.3.2" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="11.3.2" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="11.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DIAVision.Core">
+      <HintPath>C:\Program Files\Delta Industrial Automation\DIAVision\DMV-IVS\Samples\PluginSamples\references\DIAVision.Core.dll</HintPath>
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </Reference>
+    <Reference Include="DIAVision.UI.Base">
+      <HintPath>C:\Program Files\Delta Industrial Automation\DIAVision\DMV-IVS\Samples\PluginSamples\references\DIAVision.UI.Base.dll</HintPath>
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </Reference>
+    <Reference Include="DIAVision.UI.Unified">
+      <HintPath>C:\Program Files\Delta Industrial Automation\DIAVision\DMV-IVS\Samples\PluginSamples\references\DIAVision.UI.Unified.dll</HintPath>
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="**\*.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <AvaloniaResource Include="**\*.xaml">
+      <SubType>Designer</SubType>
+    </AvaloniaResource>
+  </ItemGroup>
+
+</Project>
